@@ -1,4 +1,4 @@
-# Project form for credit card payment
+# Project form for News letter sign
 Small pet-project
 
 This project was bootstrapped with ViteJS
