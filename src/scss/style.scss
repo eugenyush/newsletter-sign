@@ -26,12 +26,20 @@ body{
     justify-content: flex-end;
 
     &-img{
-        width: 100%;
+        width: 45%;
+        border-radius: 30px;
         background-image: url('/public/imges/illustration-sign-up-desktop.svg');
         background-repeat: no-repeat;
 
         @media (max-width: 1300px) {
+            margin: 0 auto;
+            width: 40%;
+            height: 200px;
             background-image: url('/public/imges/illustration-sign-up-mobile.svg');
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 500px) {
+            width:100%;
         }
     }
 
@@ -86,5 +94,15 @@ body{
     }
     @media(max-width: 1300px) {
         flex-direction: column;
+        padding: 0.5rem;
+        width: 90%;
     }
+}
+
+.success-card{
+    margin: 3rem auto;
+    padding: 2rem;
+    width: 60%;
+    border-radius: 30px;
+    background-color: #ffff;
 }
