@@ -65,11 +65,15 @@ body{
             label{
                 font: 1rem Roboto-Bold;
             }
-
+            .invalid-feedback{
+                display: none;
+                margin: 1rem 0rem;
+                color: red;
+            }
             input{
                 width: 100%;
                 padding: 15px 20px;
-                margin: 0.8rem 0;
+                margin: 0.5rem 0;
                 display: inline-block;
                 border: 0.5px solid #ccc;
                 border-radius: 8px;
@@ -92,6 +96,7 @@ body{
             }
         }
     }
+
     @media(max-width: 1300px) {
         flex-direction: column;
         padding: 0.5rem;
@@ -99,10 +104,27 @@ body{
     }
 }
 
+.novisible{
+    display: none;
+}
+
 .success-card{
-    margin: 3rem auto;
+    margin: 10rem auto;
     padding: 2rem;
-    width: 60%;
+    width: 20%;
     border-radius: 30px;
     background-color: #ffff;
+
+    &-title{
+        font: 2rem Roboto-Bold;
+        margin: 2rem auto;
+    }
+
+    &-text{
+        margin: 1rem auto;
+    }
+
+    @media (max-width: 500px) {
+        width:50%;
+    }
 }
